@@ -1,0 +1,13 @@
+server:
+  port: 5000
+cloud:
+  aws:
+    region:
+      static: us-east-1
+      use-default-aws-region-chain: true
+      auto: false
+    stack:
+      auto: false
+    credentials:
+      access-key: ${{ secrets.DOCKER_USERNAME }}
+      secret-key: ${{ secrets.DOCKER_PASSWORD }}
