@@ -9,5 +9,5 @@ cloud:
     stack:
       auto: false
     credentials:
-      access-key: {{ secrets.AWS_ACCESS_KEY }}
-      secret-key: {{ secrets.AWS_SECRET_KEY }}
+      access-key: ${{ secrets.AWS_ACCESS_KEY }}
+      secret-key: ${{ secrets.AWS_SECRET_KEY }}
